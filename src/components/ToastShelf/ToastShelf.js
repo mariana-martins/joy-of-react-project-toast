@@ -16,8 +16,8 @@ function ToastShelf() {
         aria-label="Notification"
       >
         {toasts?.map((toast) => (
-          <li className={styles.toastWrapper}>
-            <Toast key={toast.id} variant={toast.variant} id={toast.id}>
+          <li key={toast.id} className={styles.toastWrapper}>
+            <Toast variant={toast.variant} id={toast.id}>
               {toast.message}
             </Toast>
           </li>

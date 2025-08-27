@@ -29,7 +29,7 @@ function Toast({ variant, id, children }) {
         <Icon size={24} />
       </div>
       <p className={styles.content}>
-        <VisuallyHidden>{variant}</VisuallyHidden>
+        <VisuallyHidden>{variant} -</VisuallyHidden>
         {children}
       </p>
       <button
